@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lexicon Words</title>
+</head>
+
+<body>
+<div>
+<table>
+{% for row in data %}
+    <tr>
+    	{% for cell in row %}
+        	<td>{{cell}}</td>
+        {% endfor %}
+    </tr>
+{% endfor %}
+</table>
+</div>
+</body>
+</html> 
